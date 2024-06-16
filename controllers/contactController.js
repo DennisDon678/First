@@ -27,7 +27,6 @@ const createContact = asyncHandler(async (req, res) => {
 });
 
 // Get Single Contact
-
 const getSingleContact = asyncHandler(async (req, res) => {
   const id = req.params.id;
   await contact.findByPk(id).then((contact) => {
